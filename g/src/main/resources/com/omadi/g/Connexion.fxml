@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="645.0" style="-fx-background-color: C9F3FD;" styleClass="vBoxConn" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.omadi.g.Controller.ConnexionController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="645.0" style="-fx-background-color: C9F3FD;  -fx-background: linear-gradient(45deg, #13F1FC, #0470DC);     -fx-background-radius: 50px; /* Assurez-vous que le rayon d'arrière-plan correspond au rayon de la bordure */      -fx-border-radius: 50px; /* Définissez le rayon de la bordure */     -fx-padding: 20px;     -fx-background-insets: 0; /* Assurez-vous que l'arrière-plan respecte le rayon de bordure */     -fx-border-insets: 0;     -fx-effect: dropshadow(gaussian, rgba(171, 171, 171, 0.65), 13, 0, 0, 5); /* Utilisez une ombre portée pour JavaFX */     -fx-margin: 0 10px;" styleClass="conForm" stylesheets="@../../../../java/com/omadi/g/Style.css">
+         <children>
+            <AnchorPane layoutX="331.0" layoutY="-7.0" prefHeight="460.0" prefWidth="315.0">
+               <children>
+                  <Label layoutX="63.0" layoutY="90.0" prefHeight="49.0" prefWidth="189.0" text="Connectez-vous " textFill="#2a3a8a">
+                     <font>
+                        <Font name="Yu Gothic UI Semibold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="63.0" layoutY="184.0" text="nom d'utilisateur" />
+                  <TextField fx:id="tflogin" layoutX="63.0" layoutY="205.0" prefHeight="35.0" prefWidth="174.0" />
+                  <Label layoutX="63.0" layoutY="263.0" text="mot de passe" />
+                  <PasswordField fx:id="pf" layoutX="63.0" layoutY="287.0" prefHeight="35.0" prefWidth="174.0" />
+                  <Button layoutX="109.0" layoutY="351.0" mnemonicParsing="false" onAction="#clickConnexion" prefHeight="28.0" prefWidth="81.0" text="Connexion" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="113.0" layoutY="84.0" prefHeight="49.0" prefWidth="159.0" text="Bonjour">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="33.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img" fitHeight="298.0" fitWidth="283.0" layoutX="23.0" layoutY="134.0">
+               <image>
+                  <Image url="file:/C:/Users/madio/Downloads/logo_de_mosaic.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

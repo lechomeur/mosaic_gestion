@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="834.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.omadi.g.Controller.EvenementController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="900.0" style="-fx-background-color: #72FAA8; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-padding: 20px; -fx-effect: dropshadow(gaussian, rgba(171, 171, 171, 0.65), 13, 0, 0, 5);">
+         <children>
+            <Pane layoutX="46.0" layoutY="19.0" prefHeight="39.0" prefWidth="821.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+               <children>
+                  <Button layoutY="-2.0" mnemonicParsing="false" onAction="#ClickAcc" prefHeight="42.0" prefWidth="104.0" style="-fx-background-color: transparent; -fx-background-radius: 5px;" text="Acceuil">
+                     <graphic>
+                        <ImageView fx:id="imgAcc" fitHeight="34.0" fitWidth="41.0">
+                           <image>
+                              <Image url="file:/C:/Users/madio/Downloads/icon acceil.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Yu Gothic UI Regular" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="678.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="142.0" style="-fx-background-color: transparent;" text="Deconnexion" textFill="#101010">
+                     <graphic>
+                        <ImageView fx:id="imgLog" fitHeight="27.0" fitWidth="33.0">
+                           <image>
+                              <Image url="file:/C:/Users/madio/Downloads/logout_icon_151219.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <FlowPane fx:id="buttonContainer" layoutX="20.0" layoutY="108.0" prefHeight="432.0" prefWidth="872.0" style="-fx-alignment: center; -fx-background-color: #72FAA8; -fx-vgap: 30px; -fx-hgap: 30px;">
+               <children>
+                  <Pane layoutY="126.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+                     <children>
+                        <TextField layoutX="-1.0" layoutY="168.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: #FF7373; -fx-border-radius: 5px; -fx-background-radius: 3px;" text="Terminé">
+                           <font>
+                              <Font name="Yu Gothic UI Light" size="21.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="-1.0" prefHeight="25.0" prefWidth="201.0" style="-fx-border-radius: 5px; -fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(171, 171, 171, 0.65), 13, 0, 0, 5);" text="                 Le 4  Juin 2024" />
+                     </children>
+                  </Pane>
+               </children></FlowPane>
+         </children></AnchorPane>
+   </children>
+</VBox>

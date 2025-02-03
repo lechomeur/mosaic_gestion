@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="758.0" prefWidth="1303.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.omadi.g.Controller.Participant_EventController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1225.0" style="-fx-background-color: white;  -fx-background-radius: 15px; -fx-border-radius: 20px; -fx-padding: 20px;     -fx-background-insets: 0; -fx-border-insets: 0;     -fx-margin: 0 10px;" styleClass="anchorPane" stylesheets="@../../../../../../target/java/com/omadi/g/Style.css">
+         <children>
+            <Pane layoutX="121.0" layoutY="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="967.0" style="-fx-background-color: linear-gradient(to bottom right, #272b3f, #256b51); -fx-background-radius: 5px; -fx-border-radius: 20px; -fx-padding: 20px; -fx-background-insets: 0; -fx-border-insets: 0; -fx-margin: 0 10px;" styleClass="pane">
+               <children>
+                  <Button layoutX="9.0" layoutY="2.0" mnemonicParsing="false" onAction="#ClickAcc" prefHeight="44.0" prefWidth="119.0" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="button-retour" stylesheets="@styleTableview.css" text="Retour" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="41.0">
+                           <image>
+                              <Image url="file:/C:/Users/madio/Downloads/icon%20retour.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Label fx:id="eventTitre" layoutX="20.0" layoutY="84.0" prefHeight="22.0" prefWidth="514.0" textFill="#195169">
+               <font>
+                  <Font name="Trebuchet MS" size="19.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="montant" layoutX="45.0" layoutY="144.0" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: white;" styleClass="textfield" stylesheets="@styleTableview.css" />
+            <TextField fx:id="rech" layoutX="741.0" layoutY="147.0" onAction="#chercheParticipant" prefHeight="32.0" prefWidth="183.0" promptText="rechercher" styleClass="search" stylesheets="@styleTableview.css" />
+            <TableView fx:id="tableView" fixedCellSize="50.0" layoutX="11.0" layoutY="188.0" prefHeight="330.0" prefWidth="919.0" stylesheets="@styleTableview.css">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="37.9999361038208" text="Id" />
+                  <TableColumn fx:id="colNom" prefWidth="85.33332443237305" text="Nom" />
+                  <TableColumn fx:id="colPrenom" prefWidth="79.99998474121094" text="Prenom" />
+                  <TableColumn fx:id="colAge" prefWidth="103.99992370605469" text="Age" />
+                  <TableColumn fx:id="colMail" prefWidth="166.00015258789062" text="Mail" />
+                  <TableColumn fx:id="colMontant" prefWidth="96.00006103515625" text="Montant" />
+                  <TableColumn fx:id="colCE" prefWidth="102.6666259765625" text="Cheque/Espece" />
+                  <TableColumn fx:id="colGenre" prefWidth="83.3333740234375" text="Genre" />
+                  <TableColumn fx:id="colTel" prefWidth="89.333251953125" text="Telephone " />
+                  <TableColumn fx:id="colAdherant" prefWidth="72.6666259765625" style="-fx-background-insets: 0 0 0 0;" text="Adherant" />
+               </columns>
+            </TableView>
+            <TextField fx:id="nbParticipe" editable="false" layoutX="937.0" layoutY="304.0" prefHeight="41.0" prefWidth="257.0" style="-fx-background-color: #89BDD3; -fx-background-radius: 10px;" stylesheets="@../../../../../../target/java/com/omadi/g/Style.css" />
+            <TextField fx:id="MonatntPay" editable="false" layoutX="937.0" layoutY="248.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="257.0" style="-fx-background-color: #72FAA8; -fx-background-radius: 10px;" />
+            <TextField fx:id="MontanNpay" editable="false" layoutX="937.0" layoutY="357.0" prefHeight="41.0" prefWidth="257.0" style="-fx-background-color: FFCECE; -fx-background-radius: 10px;" />
+            <AnchorPane layoutX="27.0" layoutY="534.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="1183.0" style="-fx-background-color: white; -fx-background-radius: 15px; -fx-border-radius: 20px; -fx-padding: 20px; -fx-background-insets: 0; -fx-border-insets: 0; -fx-margin: 0 10px; -fx-effect: dropshadow(gaussian, rgba(171, 171, 171, 0.65), 13, 0, 0, 5);;" styleClass="Textfied">
+               <children>
+                  <TextField fx:id="tfNom" layoutX="124.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="163.0" styleClass="textfield" stylesheets="@styleTableview.css" />
+                  <Label layoutX="38.0" layoutY="18.0" text="Nom : ">
+                     <font>
+                        <Font name="Yu Gothic UI Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfPrenom" layoutX="124.0" layoutY="63.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="163.0" styleClass="textfield" stylesheets="@styleTableview.css" />
+                  <Label layoutX="21.0" layoutY="68.0" prefHeight="27.0" prefWidth="76.0" text="Prenom : ">
+                     <font>
+                        <Font name="Yu Gothic UI Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TfAge" layoutX="384.0" layoutY="69.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="163.0" styleClass="textfield" stylesheets="@styleTableview.css" />
+                  <Label layoutX="320.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Age : ">
+                     <font>
+                        <Font name="Yu Gothic UI Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="323.0" layoutY="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Mail : ">
+                     <font>
+                        <Font name="Yu Gothic UI Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TfMail" layoutX="384.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="163.0" styleClass="textfield" stylesheets="@styleTableview.css" />
+                  <Label layoutX="609.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Montant : ">
+                     <font>
+                        <Font name="Yu Gothic UI Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfMontant" layoutX="709.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="163.0" styleClass="textfield" stylesheets="@styleTableview.css" />
+                  <Label layoutX="556.0" layoutY="74.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Cheque/Espece : ">
+                     <font>
+                        <Font name="Yu Gothic UI Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="888.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="107.0" text="Telephone : ">
+                     <font>
+                        <Font name="Yu Gothic UI Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfTel" layoutX="994.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="163.0" styleClass="textfield" stylesheets="@styleTableview.css" />
+                  <Label layoutX="923.0" layoutY="73.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Genre : ">
+                     <font>
+                        <Font name="Yu Gothic UI Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="EditPart" layoutX="38.0" layoutY="116.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickEditPart" prefHeight="31.0" prefWidth="94.0" styleClass="update-btn" stylesheets="@styleTableview.css" text="Modifier" textFill="WHITE" />
+                  <Button fx:id="DelPart" layoutX="165.0" layoutY="116.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickDeletPart" prefHeight="31.0" prefWidth="94.0" styleClass="delete-btn" stylesheets="@styleTableview.css" text="supprimer" textFill="WHITE" />
+                  <Button fx:id="addPart" layoutX="1002.0" layoutY="113.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickAddPart" prefHeight="42.0" prefWidth="100.0" styleClass="add-btn" stylesheets="@styleTableview.css" text="Ajouter" textFill="WHITE" />
+                  <ComboBox fx:id="tfCE" layoutX="709.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="163.0" styleClass="textfield" stylesheets="@styleTableview.css" />
+                  <ComboBox fx:id="tfGenre" layoutX="995.0" layoutY="68.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="163.0" styleClass="textfield" stylesheets="@styleTableview.css" />
+               </children>
+            </AnchorPane>
+            <TextField fx:id="MontantTot" editable="false" layoutX="937.0" layoutY="189.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="257.0" style="-fx-background-color: #F6F1F1; -fx-background-radius: 10px;" stylesheets="@styleTableview.css" />
+            <TextField fx:id="nbGarçon" editable="false" layoutX="937.0" layoutY="415.0" prefHeight="41.0" prefWidth="257.0" style="-fx-background-color: #89BDD3; -fx-background-radius: 10px;" stylesheets="@../../../../../../target/java/com/omadi/g/Style.css" />
+            <TextField fx:id="nbFille" editable="false" layoutX="937.0" layoutY="465.0" prefHeight="41.0" prefWidth="257.0" style="-fx-background-color: FFCECE; -fx-background-radius: 10px;" />
+            <Button fx:id="EditEvent" layoutX="541.0" layoutY="147.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickEditEvent" prefHeight="32.0" prefWidth="183.0" styleClass="update-btn" stylesheets="@styleTableview.css" text="Modifier l'evenement" textFill="WHITE" />
+            <Button layoutX="347.0" layoutY="147.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#downfile" prefHeight="32.0" prefWidth="183.0" style="-fx-background-color: #5DE0E6;" styleClass="btn-download" stylesheets="@styleTableview.css" text="Telecharger" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

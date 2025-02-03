@@ -1,0 +1,73 @@
+
+
+.anchorPane{
+    
+    -fx-background-radius: 50px; 
+
+    -fx-border-radius: 20px;
+    -fx-padding: 20px;
+    -fx-background-insets: 0; 
+    -fx-border-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(171, 171, 171, 0.65), 13, 0, 0, 5); 
+    -fx-margin: 0 10px;
+    }
+    
+.anchor{
+    
+    -fx-background-radius: 20px; 
+
+    -fx-border-radius: 10px;
+    -fx-padding: 10px;
+    -fx-background-insets: 0; 
+    -fx-border-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(171, 171, 171, 0.65), 13, 0, 0, 5); 
+    -fx-margin: 0 10px;
+    }
+    .Textfied{
+    
+    -fx-background-radius: 50px; 
+
+    -fx-border-radius: 20px;
+    -fx-padding: 20px;
+    -fx-background-insets: 0; 
+    -fx-border-insets: 0;
+    -fx-margin: 0 10px;
+    }
+.TextElement{
+    -fx-border-radius:20px;
+    -fx-background-color: #89BDD3;
+    -fx-border-radius:8px;
+    -fx-padding:20px;
+    -fx-box-shadow: #89BDD3;
+
+}
+.pane{
+      -fx-background: linear-gradient(45deg, #13F1FC, #0470DC);
+    -fx-background-radius: 50px; 
+
+    -fx-border-radius: 20px; 
+    -fx-padding: 20px;
+    -fx-background-insets: 0; 
+    -fx-border-insets: 0;
+    -fx-margin: 0 10px;
+}
+.conForm{
+      -fx-background: linear-gradient(45deg, #13F1FC, #0470DC);
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px; 
+    -fx-padding: 20px;
+    -fx-background-insets: 0; 
+    -fx-border-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(171, 171, 171, 0.65), 13, 0, 0, 5); 
+    -fx-margin: 0 10px;
+}
+.vBoxConn{
+      background : linear-gradient(45deg,#13F1FC,#0470DC) ; 
+}
+.Button{
+ 
+ -fx-background-color: white; 
+ -fx-background-radius: 10px; 
+ -fx-effect: dropshadow(gaussian, rgba(171, 171, 171, 0.65), 13, 0, 0, 5); 
+  -fx-cursor:hand;
+}
